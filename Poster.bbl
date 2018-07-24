@@ -1,0 +1,127 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Westhoff.2012}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=5ea44b09758d1eac5283403695133887}{%
+           family={Westhoff},
+           familyi={W\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7ec95924ce9eeb2604bdcabc8cb58787}{%
+           family={Lehnigk},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4083467b702dfa1fb33df8cf4d3f0583}{%
+           family={R{ü}hle},
+           familyi={R\bibinitperiod},
+           given={K.-H.},
+           giveni={K\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=e78d4842b122437aaa8452c41b197444}{%
+           family={Greiwing},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b5ae77572010df27c06675fdb69da0d}{%
+           family={Schomaker},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fcde85e1874056c4f1d0c390bdf39ec2}{%
+           family={Eschenbacher},
+           familyi={E\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b94a13fa980f03cd7074b52689a25d22}{%
+           family={Siepmann},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{768d547d7539958cb4bda5f20ee48a03}
+      \strng{fullhash}{2cc0506b7cb2efecad8c0de11f456238}
+      \strng{bibnamehash}{768d547d7539958cb4bda5f20ee48a03}
+      \strng{authorbibnamehash}{768d547d7539958cb4bda5f20ee48a03}
+      \strng{authornamehash}{768d547d7539958cb4bda5f20ee48a03}
+      \strng{authorfullhash}{2cc0506b7cb2efecad8c0de11f456238}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{zuletzt abgerufen am 25.04.2018}
+      \field{title}{Positionspapier der AG-Spiroergometrie zu ventilatorischen und Laktatschwellen}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.mesics.de/fileadmin/user/literature/Spiroergometrie/AG-Spiroergometrie_Positionspapier-Schwellen.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.mesics.de/fileadmin/user/literature/Spiroergometrie/AG-Spiroergometrie_Positionspapier-Schwellen.pdf
+      \endverb
+    \endentry
+    \entry{Kroidl.2015}{book}{}
+      \name{author}{4}{}{%
+        {{hash=3c6a708d71a4136232220190c83a8532}{%
+           family={Kroidl},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8cb5d93d7b8793829a28e3c66a638f16}{%
+           family={Schwarz},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7ec95924ce9eeb2604bdcabc8cb58787}{%
+           family={Lehnigk},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b19c8417af07d59ddd23cb2ffaf10a56}{%
+           family={Fritsch},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stuttgart}%
+      }
+      \list{publisher}{1}{%
+        {Georg Thieme Verlag}%
+      }
+      \strng{namehash}{1bc0c241316ed046bccdbf2610529aba}
+      \strng{fullhash}{4f820a223c69ec3ba9601f4bcb1b9592}
+      \strng{bibnamehash}{1bc0c241316ed046bccdbf2610529aba}
+      \strng{authorbibnamehash}{1bc0c241316ed046bccdbf2610529aba}
+      \strng{authornamehash}{1bc0c241316ed046bccdbf2610529aba}
+      \strng{authorfullhash}{4f820a223c69ec3ba9601f4bcb1b9592}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kursbuch Spiroergometrie - Technik und Befundung verst{ä}ndlich gemacht}
+      \field{year}{2015}
+      \field{pages}{60 ff.\bibrangessep 83\bibrangedash 89\bibrangessep 133 ff.\bibrangessep 140\bibrangedash 146\bibrangessep 331 ff.\bibrangessep 501 ff.}
+      \range{pages}{-1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

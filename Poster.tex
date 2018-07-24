@@ -1,0 +1,109 @@
+%-----------------Präambel-----------------%
+\documentclass[a0,portrait]{a0poster}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage{lmodern}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\usepackage[ngerman]{babel}
+\usepackage{color}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{bluesky}{rgb}{0.63,0.80,1.0}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{graphicx}
+%-----------------Makros-----------------%
+\renewcommand\baselinestretch{1.35}
+\parskip=0.5\baselineskip
+\parindent0mm %Einrücktiefe der ersten Zeile eines Absatzes
+\topmargin-28pt
+\marginparwidth0mm
+
+%Ränder rechts/links
+\oddsidemargin-13pt
+\evensidemargin-13pt
+\textwidth785mm
+%\textheight1140mm
+
+\newcommand{\spaltenbreite}{15}
+\newcommand{\bildbreite}{15cm}
+
+\setlength{\fboxrule}{3.25mm} 		%Definiert die Linienstärke für nachfolgende fbox- und framebox-Befehle
+\setlength{\fboxsep}{5mm} 			%Abstand zwischen Rahmen und Text bei den /fbox und /framebox Befehlen.
+\setlength{\columnsep}{15mm}     	%Spaltenabstand
+\setlength{\columnseprule}{1pt}  	%Balken zwischen Spalten {0pt}->keine Balken
+
+\unitlength1cm
+\newcounter{skalax}
+\newcounter{skalay}
+
+% Literaturverzeichnis:
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage[
+backend=biber,
+style=iso-numeric,
+autolang=other,
+bibencoding=UTF8,
+maxnames=3,
+hyperref
+]{biblatex}
+
+\DefineBibliographyStrings{ngerman}{andothers={et\ al\adddot}}
+\addbibresource{Referenzen.bib}
+
+\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
+\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
+\setcounter{biburlucpenalty}{9000}% Großbuchstaben
+
+%-----------------Beginning-----------------%
+\begin{document}
+
+\begin{center}
+	\vspace*{0.006\textheight}
+	{\huge \textbf{Evaluierung von Methoden\\[-0.003\textheight]
+			zur Bestimmung der ventilatorischen\\[-0.003\textheight]
+			Schwellen in der Spiroergometrie}\\}%[0.03\textheight]
+	\vspace*{0.018\textheight}
+	{\LARGE \textbf{Julian-Marvin Lütten (2018)}}
+\end{center}
+
+\begin{picture}(0,0)
+\put(66.5, 7){\includegraphics[height=60mm]{Bilder/fhl_logo.eps}}
+\put(66.4, 5.8){\textsf{\textbf{Prof. Dr. Dipl.-Ing. U. Wenkebach}}}
+\put(0.0, 9.5){\includegraphics[height=33mm]{Bilder/cardioscan_logoclaim_RGB_pos.png}}
+\end{picture}
+
+\cornersize*{20mm}
+\linethickness{0.1mm}
+\setlength{\fboxrule}{2.25mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% neuer Kasten
+\Ovalbox
+{
+	\parbox{\textwidth}{
+		\begin{multicols}{3}
+			\input{Einleitung}
+			\input{Grundlagen}
+		\end{multicols}
+	}
+}
+
+% neuer Kasten
+\vspace*{0.002\textheight}
+\Ovalbox%\fbox
+{
+	\parbox{\textwidth}{
+		\begin{multicols}{3}
+			\input{Methoden}
+			\input{Resultate}
+			\input{Resultate2}
+		\end{multicols}
+	}
+}
+
+\end{document}

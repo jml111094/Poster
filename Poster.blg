@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Poster.blg'
 [28] biber-MSWIN64:313> INFO - === 
-[56] Biber.pm:371> INFO - Reading 'Poster.bcf'
-[136] Biber.pm:857> INFO - Found 2 citekeys in bib section 0
-[151] Biber.pm:3976> INFO - Processing section 0
-[167] Biber.pm:4136> INFO - Looking for bibtex format file 'Referenzen.bib' for section 0
-[170] bibtex.pm:1500> INFO - LaTeX decoding ...
-[178] bibtex.pm:1316> INFO - Found BibTeX data source 'Referenzen.bib'
-[208] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[208] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[208] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[208] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[216] bbl.pm:617> INFO - Writing 'Poster.bbl' with encoding 'UTF-8'
-[218] bbl.pm:720> INFO - Output to Poster.bbl
+[58] Biber.pm:371> INFO - Reading 'Poster.bcf'
+[140] Biber.pm:857> INFO - Found 2 citekeys in bib section 0
+[154] Biber.pm:3976> INFO - Processing section 0
+[169] Biber.pm:4136> INFO - Looking for bibtex format file 'Referenzen.bib' for section 0
+[172] bibtex.pm:1500> INFO - LaTeX decoding ...
+[180] bibtex.pm:1316> INFO - Found BibTeX data source 'Referenzen.bib'
+[209] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[210] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[210] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[210] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[218] bbl.pm:617> INFO - Writing 'Poster.bbl' with encoding 'UTF-8'
+[219] bbl.pm:720> INFO - Output to Poster.bbl

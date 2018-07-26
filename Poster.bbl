@@ -121,6 +121,66 @@
       \field{pages}{60 ff.\bibrangessep 83\bibrangedash 89\bibrangessep 133 ff.\bibrangessep 140\bibrangedash 146\bibrangessep 331 ff.\bibrangessep 501 ff.}
       \range{pages}{-1}
     \endentry
+    \entry{Loe.2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2f0ff298707b532486496cce094de545}{%
+           family={Loe},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=95146ad9da8180dc41a54df3e6870f15}{%
+           family={Steinshamn},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=93082b4dcd4deb7b0623273880cce724}{%
+           family={Wisløff},
+           familyi={W\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf8bdee04611c39de4e149571509a2cd}
+      \strng{fullhash}{bf8bdee04611c39de4e149571509a2cd}
+      \strng{bibnamehash}{bf8bdee04611c39de4e149571509a2cd}
+      \strng{authorbibnamehash}{bf8bdee04611c39de4e149571509a2cd}
+      \strng{authornamehash}{bf8bdee04611c39de4e149571509a2cd}
+      \strng{authorfullhash}{bf8bdee04611c39de4e149571509a2cd}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS One}
+      \field{number}{11}
+      \field{title}{Cardio-Respiratory Reference Data in 4631 Healthy Men and Women 20-90 Years: The HUNT 3 Fitness Study}
+      \field{volume}{9}
+      \field{year}{2014}
+    \endentry
+    \entry{Kindermann.2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=312d8354c3826e72bab1e70a7f3cfb18}{%
+           family={Kindermann},
+           familyi={K\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \strng{fullhash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \strng{bibnamehash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \strng{authorbibnamehash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \strng{authornamehash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \strng{authorfullhash}{312d8354c3826e72bab1e70a7f3cfb18}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Deutsche Zeitschrift f{ü}r Sportmedizin}
+      \field{number}{6}
+      \field{title}{Anaerobe Schwelle}
+      \field{volume}{55}
+      \field{year}{2004}
+      \field{pages}{161\bibrangedash 162}
+      \range{pages}{2}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

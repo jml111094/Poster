@@ -1,31 +1,28 @@
 %-----------------Präambel-----------------%
-\documentclass[a0,portrait]{a0poster}
-\usepackage{multicol}
-\usepackage[utf8]{inputenc}
+\documentclass[a0,portrait]{a0poster}						%Dokumentenklasse für A0-Poster
+\usepackage{multicol}										%Paket für mehrspalite Texte
+\usepackage[utf8]{inputenc}									%Zeichencodierung
 \usepackage[T1]{fontenc}
-\usepackage{ae}
 \usepackage{lmodern}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 \newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
-\usepackage[ngerman]{babel}
-\usepackage{color}
-\definecolor{darkgreen}{rgb}{0,0.5,0}
-\definecolor{darkblue}{rgb}{0,0,0.5}
-\definecolor{bluesky}{rgb}{0.63,0.80,1.0}
+\usepackage[ngerman]{babel}									%Deutsches Sprachpaket
+%\usepackage{color}											%falls man unterschiedliche Schriftfarben nutzen mag
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{fancybox}
 \usepackage{graphicx}
+\usepackage{lipsum}											%aus späterem Dokument entfernen - nur zur Vorlage
 \usepackage{blindtext}
 %-----------------Makros-----------------%
 \renewcommand\baselinestretch{1.35}
 \parskip=0.5\baselineskip
-\parindent0mm %Einrücktiefe der ersten Zeile eines Absatzes
+\parindent0mm 												%Einrücktiefe der ersten Zeile eines Absatzes entfernen
 \topmargin-28pt
 \marginparwidth0mm
 
-%Ränder rechts/links
+%----------Ränder rechts/links-----------%
 
 \oddsidemargin-13pt
 \evensidemargin-13pt
@@ -35,7 +32,7 @@
 \newcommand{\spaltenbreite}{15}
 \newcommand{\bildbreite}{15cm}
 
-\newcommand*\widefbox[1]{\noindent\frame{\hspace{1ex}\parbox{\dimexpr\textwidth\relax}{\vspace{0.5\baselineskip}#1\vspace{0.5\baselineskip}}\hspace{1ex}}}
+\newcommand*\widefbox[1]{\noindent\frame{\hspace{1ex}\parbox{\dimexpr\textwidth\relax}{\vspace{0.5\baselineskip}#1\vspace{0.5\baselineskip}}\hspace{1ex}}}			%\fbox umdefiniert und neu gestaltet für schönere Framebox
 
 \setlength{\fboxrule}{1.25mm} 		%Definiert die Linienstärke für nachfolgende fbox- und framebox-Befehle
 \setlength{\fboxsep}{5mm} 			%Abstand zwischen Rahmen und Text bei den /fbox und /framebox Befehlen.
@@ -45,7 +42,7 @@
 \unitlength1cm
 
 
-% Literaturverzeichnis:
+%-----------Literaturverzeichnis---------%
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage[
 backend=biber,
@@ -55,6 +52,7 @@ bibencoding=UTF8,
 maxnames=3,
 hyperref
 ]{biblatex}
+%man kann auch Bibtex verwenden, Biblatex ist jedoch neuer und bietet mehr Möglichkeiten
 
 \DefineBibliographyStrings{ngerman}{andothers={et\ al\adddot}}
 {\def\section*#1{}\addbibresource{Referenzen.bib}}
@@ -64,19 +62,18 @@ hyperref
 \setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
 \setcounter{biburlucpenalty}{9000}% Großbuchstaben
 
-%-----------------Beginning-----------------%
+%-----------------Anfang-----------------%
 \begin{document}
 
 \begin{picture}(0,0)
 \put(66.5, -6){\includegraphics[height=60mm]{Bilder/fhl_logo.eps}}
-\put(0.0, -3.5){\includegraphics[height=33mm]{Bilder/cardioscan_logoclaim_RGB_pos.png}}
+\put(0.0, -2){\text{Hier könnte ein Firmenlogo platziert werden.}}
+%\put(0.0, -3.5){\includegraphics[height=33mm]{Bilder/firmenlogo}} %optional
 \end{picture}
-\vspace{6cm}
+\vspace{5cm}
 \begin{center}
 	\vspace*{0.00001\textheight}
-	{\huge \textbf{Evaluierung von Methoden
-			zur Bestimmung der ventilatorischen
-			Schwellen in der Spiroergometrie}\\}%[0.03\textheight]
+	{\huge \textbf{Titel der Arbeit}\\}%[0.03\textheight]
 	\vspace*{0.025\textheight}
 	
 \end{center}
@@ -88,13 +85,12 @@ hyperref
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % neuer Kasten
-%\Ovalbox
+%\Ovalbox % Wenn man abgerundete Ecken für die Textboxen möchte
 \widefbox
 {
 	\parbox{\textwidth}{
 		\begin{multicols}{3}
-			\input{Einleitung}
-			\input{Grundlagen}
+			\input{TextA}
 		\end{multicols}
 	}
 }
@@ -106,11 +102,7 @@ hyperref
 {
 	\parbox{\textwidth}{
 		\begin{multicols}{3}
-			\input{Methoden}
-			\vfill
-			\columnbreak
-			\input{Resultate}
-			\input{Resultate2}
+			\input{TextB}
 		\end{multicols}
 	}
 }
@@ -121,20 +113,29 @@ hyperref
 {
 	\parbox{\textwidth}{
 		\begin{multicols}{3}
-			\input{Resultate3}
-			\vfill
-			\columnbreak
-			\input{Diskussion}
-			\vfill
-			\columnbreak
-			\input{Literatur}
+			\input{TextC}
 		\end{multicols}
 	}
 }
 
 \vspace*{0.01\textheight}
+\widefbox
+{
+	\parbox{\textwidth}{
+		\begin{multicols}{3}
+			\input{TextD}
+			\vfill
+			\columnbreak				% erzeugt einen Spaltenumbruch falls mehrere Dateien eingebunden werden
+			\input{Literatur}
+		\end{multicols}
+	}
+}
+
+
+
+\vspace*{15cm}										% gemäß der vorangehenden Textlänge einstellen, um die Fußzeile manuell zu verschieben
 \begin{picture}(0,0)
-\put(0,0.4){\line(78,0){79.4}}
-\put(0,-0.6){\textsf{\textbf{$\blacksquare${} Bachelorand: Julian-Marvin Lütten, Betreuer: Prof. Dr. Dipl.-Ing. Ullrich Wenkebach, Studiengang: Biomedizintechnik, 2018}}}
+\put(0,-1.4){\line(78,0){79.4}}
+\put(0,-2.4){\textsf{\textbf{$\blacksquare${} Bachelorand: Max Mustermann, Betreuer: Prof. Dr. Dipl.-Ing. Ullrich Wenkebach, Studiengang: Biomedizintechnik, 2018}}}
 \end{picture}
 \end{document}
